@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f7f1f1;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15%;
+    margin-left: 0%;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+form input::placeholder {
+    color: #eee5e5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    caret-color: #eee5e5;
+    color: #eee5e5;
+}
+
+.form-prompt {
+    display: inline;
+    font-size: 20px;
+}
+
+.background-image {
+    z-index: 1;
+
+    background-image: url("image-candidates/beaches.jpg");
+
+    /* Blur out the background image */
+    filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image appropriately to desires*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.field input {
+    margin: 4px;
+    padding: 4px;
+    padding-right: 0px;
+    border: 1px solid #f3e8e8;
+    border-radius: 6px;
+    height: 25px;
+    width: 225px;
+}
+
+#login-box {
+    /* Allow the login box to be on top of the background image */
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    text-align: center;
+
+    /* Positioning and styling for the login box*/
+    margin-top: 14%;
+    margin-left: 36%;
+    padding-right: 0px;
+    height: 40%;
+    width: 240px;
+    padding: 50px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    border: 2px hidden;   
+    border-radius: 3px; 
+    box-shadow: 0 0 6px #83aec2;
+}
+
+#field-spacing {
+    padding-bottom: 10px;
+}
+
+#login-button {
+    height: 35px;
+    width: 230px;
+    margin: 4px;
+    margin-left: 5px;
+    margin-top: 30px;
+    padding: 4px;
+    border: 2px solid #4c5eb1;
+    border-radius: 2px;
+    background-color: #4c5eb1;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-button:hover {
+    border: 2px solid #5e71c4;
+    border-radius: 2px;
+    background-color: #5e71c4;
+}
